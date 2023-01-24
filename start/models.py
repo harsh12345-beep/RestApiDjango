@@ -9,3 +9,4 @@ class details(models.Model):
     name = models.CharField(max_length=40)
     course = models.CharField(max_length=10) 
 
+
