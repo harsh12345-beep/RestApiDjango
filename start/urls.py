@@ -5,5 +5,5 @@ from .views import (
     Pract,
 )
 urlpatterns = [
-    path('api',Pract.as_view() ),
+    path('/',Pract.as_view() ),
 ]
