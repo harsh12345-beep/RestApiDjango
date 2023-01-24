@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#nb$4%6949t+4k0g^d$bkrqb4z$)u42ri5&hr&l0kzpbz)fdx&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app','.now.sh',"*"]
 
@@ -77,10 +77,15 @@ WSGI_APPLICATION = 'apii.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-  #  'default': {
-  #      'ENGINE': 'django.db.backends.sqlite3',
-    #    'NAME': BASE_DIR / 'db.sqlite3',
-  #  }
+    'default': {
+        'ENGINE': "django.db.backends.postgresql_psycopg2",
+        'HOST': "db.kvvcenlwmjcwoeeeglgc.supabase.co",
+        'NAME': "postgres",
+        'USER': "postgres",
+        'PASSWORD': "OutOFRange@123#",
+        'PORT': "5432",
+
+    }
 }
 
 
